@@ -1,20 +1,24 @@
 import './App.css';
 import MovieList from './MovieList';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Image from 'react-bootstrap/Image'
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>TastyTV</h1>
-
-        <img src="https://i.pinimg.com/originals/0a/b9/0e/0ab90e307aaa8fba6a1cfec6b3eb3c9e.jpg" className="mainImg" alt="logo" />
-        <p>
-          Welcome to your personal movie list
-        </p>
-        <MovieList />
+        <Image src="tastyTVLogo2.JPG" className="mainlogo" alt="logo" fluid />
       </header>
-
+      <h1 className="welcomeMessage">
+        Welcome to your personal movie list
+      </h1>
+      <p>Add movies to your own personal list.
+      </p>
+      <MovieList />
+      <footer className="footer">Copyright TastyTV {new Date().getFullYear()}</footer>
     </div>
+
   );
 }
 

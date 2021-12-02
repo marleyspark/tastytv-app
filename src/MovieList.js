@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import Movie from './Movie'
+import Button from "react-bootstrap/Button"
+
 
 
 function MovieList() {
@@ -104,28 +106,30 @@ function MovieList() {
 
 
     return (
-        <section>
-            <div className="movieList">{movie.map((movie, index) =>
-                <Movie key={`movie-${index}`} movie={movie} completeMovie={completeMovie} removeMovie={removeMovie} removeWatched={removeWatched} removeMovieAll={removeMovieAll} yesNoDelete={yesNoDelete} />
-            )}
-            </div>
+        <section className="allMovieDetails">
+
             <div className="addMovieForm">
                 <form>
                     <input onChange={addName} placeholder="Add Movie" />
                     <input onChange={addYear} placeholder="Add year" />
                     <br />
-                    <button className="submit" type="submit" onClick={addMovie}>Add Movie</button>
+                    <Button className="submit" variant="success" size='lg' type="submit" onClick={addMovie}>Add Movie</Button>
                 </form>
-                <button className="DeleteAll" onClick={() => yesNoAll()}>Delete all</button>
-                <button className="removeWatched" onClick={() => yesNoWatched()}>Delete Watched</button>
+                <Button className="DeleteAll" variant="danger" size='lg' onClick={() => yesNoAll()}>Delete all</Button>
+                <Button className="removeWatched" variant="danger" size='lg' onClick={() => yesNoWatched()}>Delete Watched</Button>
             </div>
             <div className="suggestion2">
                 <h3>Check out some of our suggestions</h3>
                 <h3>{suggestion.name}</h3>
                 <h4>{suggestion.releasedOn}</h4>
-                <button onClick={addsSuggestion}>Add to my list!</button>
-                <button onClick={refreshPage}>Get new Suggestion</button>
+                <Button variant="outline-success" onClick={addsSuggestion}>Add to my list!</Button>
+                <Button variant="outline-info" onClick={refreshPage}>Get new Suggestion</Button>
             </div>
+            <div className="movieList">{movie.map((movie, index) =>
+                <Movie key={`movie-${index}`} movie={movie} completeMovie={completeMovie} removeMovie={removeMovie} removeWatched={removeWatched} removeMovieAll={removeMovieAll} yesNoDelete={yesNoDelete} />
+            )}
+            </div>
+
         </section>
     )
 }

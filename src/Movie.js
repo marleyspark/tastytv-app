@@ -1,12 +1,15 @@
+import Button from "react-bootstrap/Button"
+
 function Movie(props) {
     return (
-        <div>
-            <h2 style={{ color: props.movie.done ? "green" : "red" }}>
+        <div className="movieDetails">
+            <h2 className="movieName" style={{ color: props.movie.done ? "green" : "red" }}>
                 {props.movie.name}
             </h2>
-            <h3>{props.movie.year}</h3>
-            <button onClick={() => props.completeMovie(props.movie.name)}>Watched</button>
-            <button onClick={() => props.removeMovie(props.movie.name)}>Delete</button>
+            <h3 className="movieDate">{props.movie.year}</h3>
+            <Button className="watched" variant="success" size='sm' onClick={() => props.completeMovie(props.movie.name)}>Watched</Button>
+            <Button variant="danger" size='sm' onClick={() => props.removeMovie(props.movie.name)}>Delete</Button>
+
         </div>
     )
 }

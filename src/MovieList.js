@@ -69,7 +69,6 @@ function MovieList() {
                 const response = await fetch('https://hub.dummyapis.com/vj/wzGUkpZ')
                 const data = await response.json()
                 setSuggestion(data[0])
-                console.log(data)
             } catch {
 
             }
@@ -77,9 +76,10 @@ function MovieList() {
         getData()
     }, []);
 
+
+
     function refreshPage() {
         window.location.reload();
-        // document.querySelector("suggestion2").contentWindow.location.reload(true);
     }
 
     useEffect(() => {

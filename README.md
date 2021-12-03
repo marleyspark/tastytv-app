@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# TastyTV - Watch Later SPA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Website to advertise new company TastyTV including some special feature requests
+> Live demo [_here_]().
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [General Info](#general-information)
+- [Planning](#planning)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Wireframes & User Stories](#wireframe&user-stories)
+- [Project Status](#project-status)
+- [Room for Improvement](#room-for-improvement)
+- [Contact](#contact)
 
-### `npm start`
+## General Information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+“TastyTV” is launching online soon. We are a movie and tv show live-streaming service, every day with a 12-hour repeating stream. And, we can't wait to help people discover amazing movies and tv shows.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+They need to raise awareness about the company and its offerings. To that end, they want to launch a SPA that allows its visitors to maintain a list of movies and tv shows they want to watch later.
 
-### `npm test`
+The SPA should allow people to add, edit, or remove movies or tv shows from their watch later list. They should also be able to mark an item as watched. Though they want to get them started with a few recommendations from our API, which you can find on this link that will change from time to time.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Planning
 
-### `npm run build`
+I first started with the wireframe once those where completed I created the basic structure based on wireframes and the
+user stories ensuring all those user stories where included on the site.
+Then I started on the features of the site. I had some difficulty with getting the API details to show but this was resolved. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once all site features where in place I cleaned up the code ensuring it was working and nothing irrelevant was left in
+or opens didn't have a close.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once code was cleaned I worked on the CSS to get this into a modern look. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+On all issues I had I went back to lessons we covered to understand where I had missed something and then implemented
+the changes in all cases I was able to get my functions working. The only issue I had to get additional clarification on
+was on API showing which once explained was resolved and completed.
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- html
+- css
+- JavaScript
+- Bootstrap
+- react
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Special Feature**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Add a new item**
+Submit button that uses user inputted (input) to add movie name and year to their list, inputting the details into a empty array (movie)
 
-## Learn More
+**mark item as watched**
+Button that changes the status of the movie (watched) from true to false and updates colou of movie name from red to green
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Remove an item**
+Button that removes the movie from the users list
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Remove all item**
+Button that removes all movies from the users list regardless of it's watched status, with a window confirm so user can confirm if they do want to delete
 
-### Code Splitting
+**Remove all watched**
+Button that removes all movies set as watched from the users list, with a window confirm so user can confirm if they do want to delete
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Add to my list**
+Button that adds movie from API to users movie list
 
-### Analyzing the Bundle Size
+**get new suggestion**
+Button that refreses the suggestions from API. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Wireframes & User Stories
 
-### Making a Progressive Web App
+link to [wireframes and user stories](https://miro.com/app/board/uXjVOfRJ3E0=/?invite_link_id=180678208356)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Status
 
-### Advanced Configuration
+Project is: _complete_
+Based on specifications from the customer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Room for Improvement
 
-### Deployment
+Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+| Improvement               | Description                                                                   |
+| ------------------------- | ----------------------------------------------------------------------------- |
+| Allow editing of names and years              | Add function to be able to edit name and year                       |
+| Add login features           | Add log in features keeping user details so can come back later to add more movies                           |
+| Add additional API | Add another api calling another database of movies for a more varied option |
+| Add movie search function   | Add ablilty to search movies by name and add to list                   |
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+
+Created by Andrew Ralph-Gledhill

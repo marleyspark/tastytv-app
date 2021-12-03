@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react'
 import Movie from './Movie'
 import Button from "react-bootstrap/Button"
 
-
-
 function MovieList() {
     const [movie, setMovie] = useState([])
     const [value, setValue] = useState("")
@@ -75,8 +73,6 @@ function MovieList() {
         }
         getData()
     }, []);
-
-
 
     function refreshPage() {
         window.location.reload();

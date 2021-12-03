@@ -13,8 +13,7 @@ function App() {
       <h1 className="welcomeMessage">
         Welcome to your personal movie list
       </h1>
-      <p>Add movies to your own personal list.
-      </p>
+      <p>Add movies to your own personal list by using the fields below</p>
       <MovieList />
       <footer className="footer">Copyright TastyTV {new Date().getFullYear()}</footer>
     </div>

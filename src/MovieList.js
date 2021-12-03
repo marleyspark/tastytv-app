@@ -120,6 +120,7 @@ function MovieList() {
             </div>
             <div className="suggestion2">
                 <h3>Check out some of our suggestions</h3>
+                <p>You can add this to your list!</p>
                 <h3>{suggestion.name}</h3>
                 <h4>{suggestion.releasedOn}</h4>
                 <Button variant="outline-success" onClick={addsSuggestion}>Add to my list!</Button>
